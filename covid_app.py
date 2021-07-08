@@ -17,7 +17,7 @@ Act_cases=list(df["Active Cases"])
 Cur_cases=list(df["Cured/Discharged"])
 Deaths=list(df["Death"])
 
-html = """<h4>COVID INFO:</h4>
+html = """<h4> COVID INFO :</h4>
 Name: %s<br>
 Confirmed cases: %s<br>
 Active cases: %s<br>
@@ -52,6 +52,7 @@ for name,lt,ln,ac,cfs,crc,dt, in zip(states,lat,lon,Act_cases,Conf_cases,Cur_cas
 
 
 map.add_child(fg)
+
 map.save("covid_map.html")
  
  
